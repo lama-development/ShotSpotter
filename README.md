@@ -37,3 +37,13 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 ### *Config options*
 ![config options](https://i.imgur.com/hzCEqYI.png)
 
+## :white_check_mark: Changelog
+> v1.0.2
+> - Reduced resource impact on performance (0.26ms to 0.08ms)
+
+> v1.0.1
+> - Updated InvokeNative to the actual Get StreetNameAtCoord native
+> - Replaced outdated GetPlayerPed with PlayerPedId
+
+> v1.0
+> - Initial Release 
