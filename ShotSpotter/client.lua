@@ -2,7 +2,7 @@
 ─────────────────────────────────────────────────────────────────
 
 	ShotSpotter (client.lua) - Created by ItzEndah
-	Current Version: 1.0.1 (June 2021)
+	Current Version: 1.0.2 (June 2021)
 	
 	Support - ItzEndah#0001 on Discord
 	
@@ -41,7 +41,7 @@ end)
 -- Gunshot detection
 Citizen.CreateThread( function()
     while true do
-        Wait(10)
+        Wait(80)
         local ped = PlayerPedId()
 		local weapon = GetSelectedPedWeapon(ped)
 		local isSilenced = IsPedCurrentWeaponSilenced(ped)
