@@ -4,7 +4,7 @@ Config = {}
 ──────────────────────────────────────────────────────────────────
 
 	ShotSpotter (config.lua) - Created by ItzEndah
-	Current Version: 1.0.1 (June 2021)
+	Current Version: 1.0.2 (June 2021)
 	
 	Support - ItzEndah#0001 on Discord
 
