@@ -1,5 +1,5 @@
 # **Endah's Shot Spotter**
-![shot spotter](https://i.imgur.com/P3ccchL.png)
+![shot spotter](https://user-images.githubusercontent.com/79053058/123869432-4473d980-d931-11eb-8618-76b86a2ca60e.png)
 
 
 ## :bookmark_tabs: **Description** 
@@ -11,7 +11,6 @@ No permissions are being used, you just have to be inside a police car to receiv
 To be realistic, the ShotSpotter has a default delay of 20 seconds to put out an alert after gunshots are detected.  
 Throwables, melees, fire extinguishers, stunguns, flareguns, and suppressed weapons won't be detected by the ShotSpotter.  
 These last two parameters can be configured in the *config.lua* as well as a couple of other options (see [config options](https://github.com/ItzEndah/ShotSpotter#config-options)).  
-
 
 
 ## :bulb: **Features** 
@@ -36,6 +35,7 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 
 ### *Config options*
 ![config options](https://i.imgur.com/hzCEqYI.png)
+
 
 ## :white_check_mark: Changelog
 > **v1.0.2**
