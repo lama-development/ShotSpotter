@@ -3,7 +3,7 @@
 
 
 ## :bookmark_tabs: **Description** 
-This is a simple standalone *ShotSpotter* script made for *FiveM*.  
+This is a simple standalone **ShotSpotter** script made for **FiveM**.  
 
 The script will detect when gunshots are fired and will put out a sound and text alert to all of the Law Enforcement patrol vehicles with an approximate location.
 No permissions are being used, you just have to be inside a police car to receive the gunshot alert.  
