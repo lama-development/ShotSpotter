@@ -43,8 +43,8 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 
 > **v1.0.1** 
 > - Updated InvokeNative to the actual Get StreetNameAtCoord native
-> - Replaced outdated GetPlayerPed with PlayerPedId
-> (Thanks to MichaelCoding25)
+> - Replaced outdated GetPlayerPed with PlayerPedId  
+> (Thanks to *MichaelCoding25*)
 
 > **v1.0**
 > - Initial Release 
