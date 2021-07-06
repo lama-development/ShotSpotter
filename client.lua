@@ -14,9 +14,7 @@
 
 
 -- Notify player
-GetPlayerName()
-RegisterNetEvent('gunshotNotify')
-AddEventHandler('gunshotNotify', function(alert)
+RegisterNetEvent('gunshotNotify', function(alert)
 		Wait(Config.NotifyTime)
         if IsPedInAnyPoliceVehicle(PlayerPedId()) then
 			PlaySoundFrontend(-1, "TIMER_STOP", "HUD_MINI_GAME_SOUNDSET", 1)
@@ -25,8 +23,7 @@ AddEventHandler('gunshotNotify', function(alert)
 end)
 
 -- Show blip on map
-RegisterNetEvent('gunshotLocation')
-AddEventHandler('gunshotLocation', function(gx, gy, gz)
+RegisterNetEvent('gunshotLocation', function(gx, gy, gz)
 		Wait(Config.NotifyTime)
         if IsPedInAnyPoliceVehicle(PlayerPedId()) then 
             local gunshotBlip = AddBlipForRadius(gx, gy, gz, Config.BlipRadius)
