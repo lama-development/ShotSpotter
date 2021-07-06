@@ -12,17 +12,14 @@
 ─────────────────────────────────────────────────────────────────
 ]]--
 
-RegisterServerEvent('inProgress1S')
-AddEventHandler('inProgress1S', function(street1)
+RegisterServerEvent('inProgress1S', function(street1)
 	TriggerClientEvent("gunshotNotify", -1, "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1)
 end)
 
-RegisterServerEvent('inProgress2S')
-AddEventHandler('inProgress2S', function(street1, street2)
+RegisterServerEvent('inProgress2S', function(street1, street2)
 	TriggerClientEvent("gunshotNotify", -1, "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1.." ~w~/ ~y~"..street2)
 end)
 
-RegisterServerEvent('inProgressBlip')
-AddEventHandler('inProgressBlip', function(gx, gy, gz)
+RegisterServerEvent('inProgressBlip', function(gx, gy, gz)
 	TriggerClientEvent("gunshotLocation", -1, gx, gy, gz)
 end)
