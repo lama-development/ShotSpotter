@@ -38,6 +38,11 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 
 
 ## :white_check_mark: Changelog
+> **v1.0.3**
+> - Removed useless AddEventHandler 
+> - Used pre-hashed string to remove GetHashKey  
+> (Thanks to *Ekinoxx0*)
+
 > **v1.0.2**
 > - Reduced resource impact on performance (0.26ms to 0.08ms)
 
