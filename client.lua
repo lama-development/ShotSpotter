@@ -70,7 +70,7 @@ end
 -- Weapon blacklist function
 function isBlacklisted(model)
 	for _, blacklistedWeapon in pairs(Config.Blacklist) do
-		if model == GetHashKey(blacklistedWeapon) then
+		if model == blacklistedWeapon then
 			return true
 		end
 	end

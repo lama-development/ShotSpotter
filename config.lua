@@ -33,15 +33,15 @@ Config.BlipColor = 1
 -- For the weapon names: https://wiki.rage.mp/index.php?title=Weapons
 -- Melee weapons won't be detected at all, so no need to put them in the list.
 Config.Blacklist = {
-	"WEAPON_STUNGUN",
-	"WEAPON_FLAREGUN",
-	"WEAPON_BZGAS",
-	"WEAPON_MOLOTOV",
-	"WEAPON_SNOWBALL",
-	"WEAPON_BALL",
-	"WEAPON_SMOKEGRENADE",
-	"WEAPON_FLARE",
-	"WEAPON_PETROLCAN",
-	"WEAPON_HAZARDCAN",
-	"WEAPON_FIREEXTINGUISHER"
+	`WEAPON_STUNGUN`,
+	`WEAPON_FLAREGUN`,
+	`WEAPON_BZGAS`,
+	`WEAPON_MOLOTOV`,
+	`WEAPON_SNOWBALL`,
+	`WEAPON_BALL`,
+	`WEAPON_SMOKEGRENADE`,
+	`WEAPON_FLARE`,
+	`WEAPON_PETROLCAN`,
+	`WEAPON_HAZARDCAN`,
+	`WEAPON_FIREEXTINGUISHER`
 }
