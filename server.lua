@@ -2,7 +2,6 @@
 ─────────────────────────────────────────────────────────────────
 
 	ShotSpotter (server.lua) - Created by ItzEndah
-	Current Version: 1.0.3 (July 2021)
 	
 	Support - ItzEndah#0001 on Discord
 	
