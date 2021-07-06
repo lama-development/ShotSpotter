@@ -24,7 +24,7 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 
 ## :eyes: **Preview** 
 ### *Video demo*
-[Endah's Shot Spotter - FiveM Resource | DEMO](https://youtu.be/bIVGg95TFsY)
+[YouTube](https://youtu.be/bIVGg95TFsY)
 
 ### *Gunshot alerts*
 ![gunshot alert 1](https://i.imgur.com/5yV9NSq.png)
