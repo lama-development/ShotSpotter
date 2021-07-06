@@ -37,7 +37,7 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 ![config options](https://i.imgur.com/hzCEqYI.png)
 
 
-## :white_check_mark: Changelog
+## :white_check_mark: **Changelog**
 > **v1.0.3**
 > - Removed useless AddEventHandler 
 > - Used pre-hashed string to remove GetHashKey  
