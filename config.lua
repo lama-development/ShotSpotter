@@ -5,7 +5,7 @@ Config = {}
 
 	ShotSpotter (config.lua) - Created by ItzEndah
 	
-	Support - ItzEndah#0001 on Discord
+	Support - Lama#9612 on Discord
 
 ──────────────────────────────────────────────────────────────────
 ]]--
