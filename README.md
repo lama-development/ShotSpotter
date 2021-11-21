@@ -1,5 +1,5 @@
 # **Endah's Shot Spotter**
-![shot spotter](https://user-images.githubusercontent.com/79053058/123869432-4473d980-d931-11eb-8618-76b86a2ca60e.png)
+![shotspotter](https://user-images.githubusercontent.com/79053058/142773667-df6ed074-86ee-4c2e-b1c3-6182ab492602.png)
 
 
 ## :bookmark_tabs: **Description** 
