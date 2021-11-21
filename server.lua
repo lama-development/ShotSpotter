@@ -1,7 +1,7 @@
 --[[
 ─────────────────────────────────────────────────────────────────
 
-	ShotSpotter (server.lua) - Created by ItzEndah
+	ShotSpotter (server.lua) - Created by Lama
 	
 	Support - Lama#9612 on Discord
 	
