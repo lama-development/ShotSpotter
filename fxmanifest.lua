@@ -3,7 +3,7 @@ game 'gta5'
 
 name 'ShotSpotter'
 description 'Gunshot detection and alert system.'
-author 'ItzEndah'
+author 'Lama'
 version '1.0.3'
 
 server_script "server.lua"
