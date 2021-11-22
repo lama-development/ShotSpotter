@@ -1,4 +1,4 @@
-# **Endah's Shot Spotter**
+# **Lama's Shot Spotter**
 ![shotspotter](https://user-images.githubusercontent.com/79053058/142773667-df6ed074-86ee-4c2e-b1c3-6182ab492602.png)
 
 
