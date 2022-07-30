@@ -1,5 +1,5 @@
 # **ShotSpotter - Gunshot Detection System**
-![shotspotter](https://user-images.githubusercontent.com/79053058/142773667-df6ed074-86ee-4c2e-b1c3-6182ab492602.png)
+![ShotSpotter](https://user-images.githubusercontent.com/79053058/181919066-c840a974-d8a4-4dca-a89b-dbe71ca7e58c.png)
 
 
 ## :bookmark_tabs: **Description** 
@@ -38,15 +38,18 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 
 
 ## :white_check_mark: **Changelog**
-> **v1.0.3**
+> **v1.4**
+> - Added version checker
+
+> **v1.3**
 > - Removed useless AddEventHandler 
 > - Used pre-hashed string to remove GetHashKey  
 > (Thanks to *Ekinoxx0*)
 
-> **v1.0.2**
+> **v1.2**
 > - Reduced resource impact on performance (0.26ms to 0.08ms)
 
-> **v1.0.1** 
+> **v1.1** 
 > - Updated InvokeNative to the actual Get StreetNameAtCoord native
 > - Replaced outdated GetPlayerPed with PlayerPedId  
 > (Thanks to *MichaelCoding25*)
