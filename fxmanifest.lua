@@ -6,7 +6,11 @@ description 'Gunshot detection and alert system.'
 author 'Lama'
 version '1.0.3'
 
-server_script "server.lua"
+server_script {
+	"server.lua",
+	"versioncheck.lua"
+}
+
 client_script {
 	"client.lua",
 	"config.lua"
