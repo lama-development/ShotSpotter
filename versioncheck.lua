@@ -7,7 +7,7 @@ Citizen.CreateThread( function()
 		curVersion = GetResourceMetadata(GetCurrentResourceName(), "version")
 
 		if curVersion ~= responseText then
-			print("^1" .. resourceName .. ": there was an error retrieving the latest version of the resource from GitHub.\nThe version checker will be skipped.")	
+			print("^1" .. resourceName .. ": there was an error retrieving the latest version of the resource from GitHub. The version checker will be skipped.")	
 		else if tonumber(curVersion) < tonumber(responseText) then
 			print("^1" .. resourceName .. " is outdated.\nLatest version: " .. responseText .. "Current version: " .. curVersion .. "\nPlease update it from: https://github.com" .. updatePath)
 		else
