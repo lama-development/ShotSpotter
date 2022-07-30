@@ -7,8 +7,8 @@ author 'Lama'
 version '1.4'
 
 server_script {
-	"server.lua",
-	"versioncheck.lua"
+	'server.lua',
+	'versioncheck.lua'
 }
 
 client_script {
