@@ -3,7 +3,7 @@ Citizen.CreateThread( function()
 	resourceName = "ShotSpotter by Lama"
 	
 	function checkVersion(err, responseText, headers)
-		-- Returns the current version set in fxmanifest.lua
+		-- Returns the version set in the file
 		curVersion = GetResourceMetadata(GetCurrentResourceName(), "version")
 
 		if curVersion ~= responseText then
