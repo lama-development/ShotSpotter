@@ -21,7 +21,6 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 - Suppressed weapons won't be detected 
 - Ability to blacklist weapons 
 
-
 ## :eyes: **Preview** 
 ### *Video demo*
 [Youtube](https://youtu.be/bIVGg95TFsY)
@@ -36,6 +35,11 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 ### *Config options*
 ![config options](https://i.imgur.com/hzCEqYI.png)
 
+## 📈 Resmon
+| Context | CPU |
+| ------------- | ------------- |
+| Idle  | 0.03 ms  |
+| Peak  | 0.04 ms  |
 
 ## :white_check_mark: **Changelog**
 > **v1.4**
