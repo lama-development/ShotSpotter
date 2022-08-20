@@ -33,7 +33,9 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 ![map blip](https://i.imgur.com/VDzuUtg.gif)
 
 ### *Config options*
-![config options](https://i.imgur.com/hzCEqYI.png)
+![config options](https://user-images.githubusercontent.com/79053058/185755495-66d9df76-b55a-4c89-9817-3ebcf7709d76.png)
+
+
 
 ## 📈 Resmon
 | Context | CPU |
