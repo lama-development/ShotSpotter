@@ -39,6 +39,11 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 | Idle  | 0.03 ms  |
 | Peak  | 0.04 ms  |
 
+## 📥 Installation
+- Rename the folder from `ShotSpotter-main` to `ShotSpotter`
+- Drag the folder to your server resource folder
+- Add `start ShotSpotter` or `ensure ShotSpotter` to your server.cfg 
+
 ## :white_check_mark: **Changelog**
 > **v1.4**
 > - Added version checker
