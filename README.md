@@ -1,7 +1,6 @@
 # **ShotSpotter - Gunshot Detection System**
 ![ShotSpotter](https://user-images.githubusercontent.com/79053058/181919066-c840a974-d8a4-4dca-a89b-dbe71ca7e58c.png)
 
-
 ## :bookmark_tabs: **Description** 
 This is a simple standalone **ShotSpotter** script made for **FiveM**.  
 
@@ -11,7 +10,6 @@ No permissions are being used, you just have to be inside a police car to receiv
 To be realistic, the ShotSpotter has a default delay of 20 seconds to put out an alert after gunshots are detected.  
 Throwables, melees, fire extinguishers, stunguns, flareguns, and suppressed weapons won't be detected by the ShotSpotter.  
 These last two parameters can be configured in the *config.lua* as well as a couple of other options (see [config options](https://github.com/ItzEndah/ShotSpotter#config-options)).  
-
 
 ## :bulb: **Features** 
 - Simple and clean 
@@ -34,8 +32,6 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 
 ### *Config options*
 ![config options](https://user-images.githubusercontent.com/79053058/185755495-66d9df76-b55a-4c89-9817-3ebcf7709d76.png)
-
-
 
 ## 📈 Resmon
 | Context | CPU |
