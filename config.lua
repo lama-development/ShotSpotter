@@ -1,13 +1,8 @@
 Config = {}
 
 --[[
-──────────────────────────────────────────────────────────────────
-
-	ShotSpotter (config.lua) - Created by Lama
-	
-	Support - Lama#9612 on Discord
-
-──────────────────────────────────────────────────────────────────
+ShotSpotter - Created by Lama	
+For support - Lama#9612 on Discord	
 ]]--
 
 -- Sets the time in milliseconds the blip will remain on the map after a gunshot is detected.
