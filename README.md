@@ -33,13 +33,13 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 ### *Config options*
 ![config options](https://user-images.githubusercontent.com/79053058/185755495-66d9df76-b55a-4c89-9817-3ebcf7709d76.png)
 
-## 📈 Resmon
+## :bar_chart: **Resmon**
 | Context | CPU |
 | ------------- | ------------- |
 | Idle  | 0.03 ms  |
 | Peak  | 0.04 ms  |
 
-## 📥 Installation
+## :inbox_tray: **Installation**
 - Rename the folder from `ShotSpotter-main` to `ShotSpotter`
 - Drag the folder to your server resource folder
 - Add `start ShotSpotter` or `ensure ShotSpotter` to your server.cfg 
@@ -63,3 +63,11 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 
 > **v1.0**
 > - Initial Release 
+
+## :heart: **Support me**
+Please consider leaving a like or a simple comment if you enjoyed this release, to show support and allowing me to keep making free high-quality resources.  
+
+You can also check out my other releases:
+- [TruckJob](https://forum.cfx.re/t/free-truckjob-work-as-a-truck-driver/4898910)
+- [HealingPads](https://forum.cfx.re/t/free-healingpads-heal-at-hospitals/4888341)
+- [CarLock](https://forum.cfx.re/t/free-carlock-animation-sound/3768972/1)
