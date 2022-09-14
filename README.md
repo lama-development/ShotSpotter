@@ -63,11 +63,3 @@ These last two parameters can be configured in the *config.lua* as well as a cou
 
 > **v1.0**
 > - Initial Release 
-
-## :heart: **Support me**
-Please consider leaving a like or a simple comment if you enjoyed this release, to show support and allowing me to keep making free high-quality resources.  
-
-You can also check out my other releases:
-- [TruckJob](https://forum.cfx.re/t/free-truckjob-work-as-a-truck-driver/4898910)
-- [HealingPads](https://forum.cfx.re/t/free-healingpads-heal-at-hospitals/4888341)
-- [CarLock](https://forum.cfx.re/t/free-carlock-animation-sound/3768972/1)
