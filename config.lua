@@ -2,7 +2,7 @@ Config = {}
 
 --[[
 ShotSpotter - Created by Lama	
-For support - Lama#9612 on Discord	
+For support - https://discord.gg/etkAKTw3M7
 ]]--
 
 -- Sets the time in milliseconds the blip will remain on the map after a gunshot is detected.
