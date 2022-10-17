@@ -1,5 +1,5 @@
 # **ShotSpotter - Gunshot Detection System**
-![ShotSpotter](https://user-images.githubusercontent.com/79053058/194764544-9004a442-696d-4ac1-9682-7d68132042d5.png)
+![ShotSpotter](https://user-images.githubusercontent.com/79053058/196249033-d54bae9b-0315-4aa2-af94-9c50c896ed90.png)
 
 ## :bookmark_tabs: **Description** 
 This is a simple standalone **ShotSpotter** script made for **FiveM**.  
