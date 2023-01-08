@@ -18,7 +18,7 @@ end)
 
 -- version checker
 Citizen.CreateThread( function()
-	updatePath = "/ItzEndah/ShotSpotter"
+	updatePath = "/lama-development/ShotSpotter"
 	resourceName = "ShotSpotter by Lama"
 	
 	function checkVersion(err, responseText, headers)
