@@ -5,17 +5,21 @@ Do not edit below if you don't know what you are doing
 ]]--
 
 RegisterServerEvent('inProgress1S', function(street1)
-	TriggerClientEvent("gunshotNotify", -1, "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1)
+    TriggerEvent("gunshotNotify", "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1)
 end)
 
 RegisterServerEvent('inProgress2S', function(street1, street2)
-	TriggerClientEvent("gunshotNotify", -1, "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1.." ~w~/ ~y~"..street2)
+    TriggerEvent("gunshotNotify", "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1.." ~w~/ ~y~"..street2)
 end)
 
 RegisterServerEvent('inProgressBlip', function(gx, gy, gz)
-	TriggerClientEvent("gunshotLocation", -1, gx, gy, gz)
+    TriggerClientEvent("gunshotLocation", -1, gx, gy, gz)
 end)
 
+RegisterNetEvent('gunshotNotify')
+AddEventHandler('gunshotNotify', function(alert)
+    TriggerClientEvent('playerNotify', -1, alert)
+end)
 -- version checker
 Citizen.CreateThread( function()
 	updatePath = "/lama-development/ShotSpotter"
