@@ -28,20 +28,20 @@ RegisterNetEvent('gunshotLocation', function(gx, gy, gz)
 end)
 
 -- Notify event
-RegisterNetEvent('playerNotify', function(alert)
+RegisterNetEvent('playerNotify', function(alert, postal)
     if Config.Framework == 'QBCore' then
         if QBCore.Functions.GetPlayerData().job.name == 'police' and QBCore.Functions.GetPlayerData().job.onduty == true then
             Wait(Config.NotifyTime)
             PlaySoundFrontend(-1, "TIMER_STOP", "HUD_MINI_GAME_SOUNDSET", 1)
             SetNotificationTextEntry('STRING')
-            AddTextComponentString(alert)
+            AddTextComponentString(alert.. postal)
             DrawNotification(false, false)
         end 
     elseif Config.Framework == 'standalone' then -- Gets rid of checks 
         Wait(Config.NotifyTime)
         PlaySoundFrontend(-1, "TIMER_STOP", "HUD_MINI_GAME_SOUNDSET", 1)
         SetNotificationTextEntry('STRING')
-        AddTextComponentString(alert)
+        AddTextComponentString(alert.. postal)
         DrawNotification(false, false)
     end
 end)
@@ -57,13 +57,14 @@ CreateThread( function()
         local s1, s2 = GetStreetNameAtCoord(plyPos.x, plyPos.y, plyPos.z)
         local street1 = GetStreetNameFromHashKey(s1)
         local street2 = GetStreetNameFromHashKey(s2)
+        local postal = exports[Config.PostalResource]:getNearestPostal(ped)
 
         if IsPedShooting(ped) and not isSilenced and not isBlacklisted(weapon) then
             TriggerServerEvent('inProgressBlip', plyPos.x, plyPos.y, plyPos.z)
             if s2 == 0 then
-                TriggerServerEvent('inProgress1S', street1)
+                TriggerServerEvent('inProgress1S', street1, postal)
             elseif s2 ~= 0 then
-                TriggerServerEvent('inProgress2S', street1, street2)
+                TriggerServerEvent('inProgress2S', street1, street2, postal)
             end
             Wait(Config.AlertCooldown)
         end

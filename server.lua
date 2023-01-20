@@ -4,12 +4,12 @@ For support - https://discord.gg/etkAKTw3M7
 Do not edit below if you don't know what you are doing
 ]]--
 
-RegisterServerEvent('inProgress1S', function(street1)
-    TriggerEvent("gunshotNotify", "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1)
+RegisterServerEvent('inProgress1S', function(street1, postal)
+    TriggerEvent("gunshotNotify", "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1.. postal)
 end)
 
-RegisterServerEvent('inProgress2S', function(street1, street2)
-    TriggerEvent("gunshotNotify", "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1.." ~w~/ ~y~"..street2)
+RegisterServerEvent('inProgress2S', function(street1, street2, postal)
+    TriggerEvent("gunshotNotify", "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1.." ~w~/ ~y~"..street2.. postal)
 end)
 
 RegisterServerEvent('inProgressBlip', function(gx, gy, gz)
@@ -17,8 +17,8 @@ RegisterServerEvent('inProgressBlip', function(gx, gy, gz)
 end)
 
 RegisterNetEvent('gunshotNotify')
-AddEventHandler('gunshotNotify', function(alert)
-    TriggerClientEvent('playerNotify', -1, alert)
+AddEventHandler('gunshotNotify', function(alert, postal)
+    TriggerClientEvent('playerNotify', -1, alert, postal)
 end)
 -- version checker
 Citizen.CreateThread( function()
