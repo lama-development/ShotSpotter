@@ -28,20 +28,20 @@ RegisterNetEvent('gunshotLocation', function(gx, gy, gz)
 end)
 
 -- Notify event
-RegisterNetEvent('playerNotify', function(alert, postal)
+RegisterNetEvent('playerNotify', function(alert)
     if Config.Framework == 'QBCore' then
         if QBCore.Functions.GetPlayerData().job.name == 'police' and QBCore.Functions.GetPlayerData().job.onduty == true then
             Wait(Config.NotifyTime)
             PlaySoundFrontend(-1, "TIMER_STOP", "HUD_MINI_GAME_SOUNDSET", 1)
             SetNotificationTextEntry('STRING')
-            AddTextComponentString(alert.. postal)
+            AddTextComponentString(alert)
             DrawNotification(false, false)
         end 
     elseif Config.Framework == 'standalone' then -- Gets rid of checks 
         Wait(Config.NotifyTime)
         PlaySoundFrontend(-1, "TIMER_STOP", "HUD_MINI_GAME_SOUNDSET", 1)
         SetNotificationTextEntry('STRING')
-        AddTextComponentString(alert.. postal)
+        AddTextComponentString(alert)
         DrawNotification(false, false)
     end
 end)
@@ -57,14 +57,13 @@ CreateThread( function()
         local s1, s2 = GetStreetNameAtCoord(plyPos.x, plyPos.y, plyPos.z)
         local street1 = GetStreetNameFromHashKey(s1)
         local street2 = GetStreetNameFromHashKey(s2)
-        local postal = exports[Config.PostalResource]:getNearestPostal(ped)
 
         if IsPedShooting(ped) and not isSilenced and not isBlacklisted(weapon) then
             TriggerServerEvent('inProgressBlip', plyPos.x, plyPos.y, plyPos.z)
             if s2 == 0 then
-                TriggerServerEvent('inProgress1S', street1, postal)
+                TriggerServerEvent('inProgress1S', street1)
             elseif s2 ~= 0 then
-                TriggerServerEvent('inProgress2S', street1, street2, postal)
+                TriggerServerEvent('inProgress2S', street1, street2)
             end
             Wait(Config.AlertCooldown)
         end
@@ -72,7 +71,7 @@ CreateThread( function()
 end)
 
 -- Weapon blacklist function
-local function isBlacklisted(model)
+function isBlacklisted(model)
     for _, blacklistedWeapon in pairs(Config.Blacklist) do
         if model == blacklistedWeapon then
             return true

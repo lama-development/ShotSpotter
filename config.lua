@@ -14,8 +14,6 @@ Config.BlipTime = 60000
 -- Sets the time in milliseconds needed for the ShotSpotter to detect a gunshot and put out an alert notification.
 Config.NotifyTime = 30000 
 
-Config.PostalResource = 'REPLACE' -- EXACT NAME
-
 -- Sets the minimum time in milliseconds between gunshots alert notifications.
 -- If you are getting too many alert notifications when multiple gunshots are detected, you may want to increase the value.
 Config.AlertCooldown = 30000 
