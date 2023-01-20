@@ -5,6 +5,8 @@ ShotSpotter - Created by Lama
 For support - https://discord.gg/etkAKTw3M7
 ]]--
 
+Config.Framework = "QBCore" -- change to standalone or QBCore
+
 -- Sets the time in milliseconds the blip will remain on the map after a gunshot is detected.
 Config.BlipTime = 60000 
 

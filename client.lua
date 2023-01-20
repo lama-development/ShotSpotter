@@ -3,9 +3,20 @@ ShotSpotter - Created by Lama
 For support - https://discord.gg/etkAKTw3M7
 Do not edit below if you don't know what you are doing
 ]]--
+local QBCore = exports['qb-core']:GetCoreObject() 
 
 RegisterNetEvent('gunshotLocation', function(gx, gy, gz)
-    if QBCore.Functions.GetPlayerData().job.name == 'police' and QBCore.Functions.GetPlayerData().job.onduty == true then
+    if Config.Framework == 'QBCore' then
+        if QBCore.Functions.GetPlayerData().job.name == 'police' and QBCore.Functions.GetPlayerData().job.onduty == true then
+            Wait(Config.NotifyTime)
+            local gunshotBlip = AddBlipForRadius(gx, gy, gz, Config.BlipRadius)
+            SetBlipSprite(gunshotBlip, 161)
+            SetBlipColour(gunshotBlip, Config.BlipColor)
+            SetBlipAsShortRange(gunshotBlip, 0)
+            Wait(Config.BlipTime)
+            SetBlipSprite(gunshotBlip, 2)
+        end 
+    elseif Config.Framework == 'standalone' then
         Wait(Config.NotifyTime)
         local gunshotBlip = AddBlipForRadius(gx, gy, gz, Config.BlipRadius)
         SetBlipSprite(gunshotBlip, 161)
@@ -15,9 +26,18 @@ RegisterNetEvent('gunshotLocation', function(gx, gy, gz)
         SetBlipSprite(gunshotBlip, 2)
     end
 end)
+
 -- Notify event
 RegisterNetEvent('playerNotify', function(alert)
-    if QBCore.Functions.GetPlayerData().job.name == 'police' and QBCore.Functions.GetPlayerData().job.onduty == true then
+    if Config.Framework == 'QBCore' then
+        if QBCore.Functions.GetPlayerData().job.name == 'police' and QBCore.Functions.GetPlayerData().job.onduty == true then
+            Wait(Config.NotifyTime)
+            PlaySoundFrontend(-1, "TIMER_STOP", "HUD_MINI_GAME_SOUNDSET", 1)
+            SetNotificationTextEntry('STRING')
+            AddTextComponentString(alert)
+            DrawNotification(false, false)
+        end 
+    elseif Config.Framework == 'standalone' then -- Gets rid of checks 
         Wait(Config.NotifyTime)
         PlaySoundFrontend(-1, "TIMER_STOP", "HUD_MINI_GAME_SOUNDSET", 1)
         SetNotificationTextEntry('STRING')
@@ -51,7 +71,7 @@ CreateThread( function()
 end)
 
 -- Weapon blacklist function
-function isBlacklisted(model)
+local function isBlacklisted(model)
     for _, blacklistedWeapon in pairs(Config.Blacklist) do
         if model == blacklistedWeapon then
             return true
