@@ -4,8 +4,6 @@ For support - https://discord.gg/etkAKTw3M7
 Do not edit below if you don't know what you are doing
 ]]--
 
-local QBCore = exports['qb-core']:GetCoreObject()
-
 RegisterServerEvent('inProgress1S', function(street1)
     TriggerEvent("gunshotNotify", "~r~[ShotSpotter] ~w~Gunshot detected: ~y~"..street1)
 end)
