@@ -2,7 +2,7 @@ Config = {}
 
 --[[
 ShotSpotter - Created by Lama	
-Modified by: Mythic to support QBCore and postals :)
+Modified by: Mythic to support QBCore :)
 For support - https://discord.gg/etkAKTw3M7
 ]]--
 
