@@ -8,6 +8,9 @@ For support - https://discord.gg/etkAKTw3M7
 -- Sets the time in milliseconds the blip will remain on the map after a gunshot is detected.
 Config.BlipTime = 60000 
 
+-- If set to true it will ignore the NotifyTime and send the notification as soon as the gunshot detected.
+Config.InstantNotify = false
+
 -- Sets the time in milliseconds needed for the ShotSpotter to detect a gunshot and put out an alert notification.
 Config.NotifyTime = 30000 
 
