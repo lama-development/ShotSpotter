@@ -7,7 +7,7 @@ Do not edit below if you don't know what you are doing
 -- Notify player
 RegisterNetEvent('gunshotNotify')
 AddEventHandler('gunshotNotify', function(alert)
-    wait(Config.NotifyTime)
+    Citizen.Wait(Config.NotifyTime)
     if IsPedInAnyPoliceVehicle(PlayerPedId()) then
         PlaySoundFrontend(-1, "TIMER_STOP", "HUD_MINI_GAME_SOUNDSET", 1)
         Notify(alert)
