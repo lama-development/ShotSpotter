@@ -9,6 +9,7 @@ For support - https://discord.gg/etkAKTw3M7
 Config.BlipTime = 60000 
 
 -- Sets the time in milliseconds needed for the ShotSpotter to detect a gunshot and put out an alert notification.
+-- Set to 0 if you want it to intantly notify
 Config.NotifyTime = 30000 
 
 -- Sets the minimum time in milliseconds between gunshots alert notifications.
